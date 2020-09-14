@@ -22,10 +22,21 @@ const typeDefs = gql`
     name: String!
     email: String!
     password:String!
+    records: [Quake]
   }
 
+
   type Mutation {
-    addBook(title: String, author: String): Book
+    #if False, Saving Record Failed
+    saveRecord(recordID: ID!): recordUpdateResponse!
+    #if False, deleting Record Failed
+    deleteRecord(recordID: ID!): recordUpdateResponse!
+  }
+
+  type recordUpdateResponse {
+    sucess:Boolean
+    message:string
+    record:[Quake]
   }
   
   
