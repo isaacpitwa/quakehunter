@@ -1,0 +1,21 @@
+{
+  "name": "quakehunter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "Apollo",
+    "Node"
+  ],
+  "author": "Isaac Pitwa",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.1.5",
+    "@apollo/server": "^3.0.0-alpha.1",
+    "graphql": "^15.3.0"
+  }
+}
