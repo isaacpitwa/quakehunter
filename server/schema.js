@@ -35,7 +35,7 @@ const typeDefs = gql`
 
   type recordUpdateResponse {
     sucess:Boolean
-    message:string
+    message:String
     record:[Quake]
   }
   
